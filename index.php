@@ -7,26 +7,28 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>All for One</title>
+<title><?php bloginfo('description'); ?> | <?php bloginfo('name'); ?></title>
+
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>"
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-
+<?php wp_head(); ?>
 </head>
 
 
 
 
 
-<body>
+<body <?php body_class(); ?>>
 <div id="wrapper">
 	<div id="login">
     	<p>sign in</p>
     
     <header>
-    	<a href="#"><img src="images/all41.png" alt="All for One Logo" title="All for one logo"/></a>
+    	<a href="../wordpress/"><img src="<?php bloginfo('template_directory'); ?>
+/images/all41.png" alt="All for One Logo" title="All for one logo"/></a>
     </header>
 	</div>
 	<nav>
@@ -58,7 +60,8 @@
         </aside>
      	<div class="background">
           <div class="journal-section">
-                <img src="images/main1.png" alt="All for One Logo" title="All for one logo"/>
+                <img src="<?php bloginfo('template_directory'); ?>
+/images/main1.png" alt="All for One Logo" title="All for one logo"/>
                 <h3>Building A Community</h3>
                 <p>Lorem ipsum Pellentesque molestie aliquam accumsan. Nunc sagittis ipsum vel cursus fringilla. Donec efficitur imperdiet molest et elit. Pellentesque ultricies ac diam eu ornare. Aenean auctor diam sit amet porttitor malesuadaLorem ipsum Pellentesque molestie aliquam accumsan. Nunc sagittis ipsum vel cursus fringilla. Donec efficitur imperdiet molest et elit. Pellentesque ultricies ac diam eu ornare. Aenean auctor diam sit amet porttitor malesuada. Lorem ipsum Pellentesque molestie aliquam accumsan. Nunc sagittis ipsum vel cursus fringilla. Donec efficitur imperdiet molest et elit. Pellentesque ultricies ac diam eu ornare. Aenean auctor diam sit amet porttitor malesuadaLorem ipsum Pellentesque molestie aliquam accumsan. Nunc sagittis ipsum vel cursus fringilla. Donec efficitur imperdiet molest et elit. Pellentesque ultricies ac diam eu ornare. Aenean auctor diam sit amet porttitor malesuada.
                 </p>
@@ -81,10 +84,14 @@
             </nav>
        		<div class="section">
             	<ul>
-                    <li><a href="#"><img src="images/facebook-icon.png"></a></li>
-                    <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-                    <li><a href="#"><img src="../Spring2015/maddyswebnation.com/web170/all41/images/linkedin-icon.png"></a></li>
-                    <li><a href="#"><img src="../Spring2015/maddyswebnation.com/web170/all41/images/pinterest-icon.png"></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>
+/images/facebook-icon.png"></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>
+/images/twitter-icon.png"></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>
+/images/linkedin-icon.png"></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_directory'); ?>
+/images/pinterest-icon.png"></a></li>
                 </ul>
             </div>
         	<div class="section">
@@ -101,6 +108,6 @@
             
        
 
-
+<?php wp_footer(); ?>
 </body>
 </html>
