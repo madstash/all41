@@ -1,0 +1,293 @@
+<style>
+
+body {
+	background-image:url(images/worldmap3.jpg);	
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	overflow: auto;
+	}
+	
+h1, h2, h3 {
+	text-align:left;
+	padding-left:5%;
+	color:#000;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing:.05em;
+	}
+	
+p {
+	padding: 2%;
+	color:#000;
+	}
+	
+img {
+	text-align:center;
+	max-width:100%;
+	height: auto;
+	width: auto;
+	}
+	
+#wrapper {
+	margin: 0 auto;
+	max-width: 1020px;
+	width: 98%;
+	background: #fff;
+	border: 1px solid #CCCCCC;
+	border-radius: 2px;
+	box-shadow: 0 0 10px 0px rgba(12, 3, 25, 0.8);
+	}
+	
+#login {
+	width: 100%;
+	height: 20%;
+	background:#E86850;
+	overflow: hidden;
+	}
+	
+#login p {
+	text-align:right;
+	font-size:13px;
+	padding: 0.1% 5% 0 0;
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+	}
+
+#login p a {
+	color: #CCCCCC;
+	text-decoration:none;
+	}
+
+header {
+	background: #E86850;
+	width: 76%;
+	min-height: 80px;
+	padding: 4%;
+	text-align: center;
+	}
+
+nav {
+	background: #666666;
+	}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	}
+	
+nav ul li {
+	float: left;
+	border: 0px 1px 0px 1px solid #fff;
+	width: 20%;
+	}
+	
+nav ul li a {
+	background: #666666;
+	display:block;
+	padding: 5% 12%;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing:.11;
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+	}
+	
+nav ul li a:hover, nav ul li.active a {
+	background-color: #E86850;
+	color: ;
+	}
+
+.banner img {
+	width: 100%;
+	border-top: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	}
+
+.clearfix {
+	clear:both;
+	}
+
+.left-col {
+	background: #fff;
+	width: 96%;
+	float: left;
+	margin: 1% 1% 1% 1%;
+	padding: -4%;
+	}
+	
+.sidebar {
+	width: 18%;
+	float: left;
+	margin: 1%;
+	text-align: left;
+	}
+
+.sidebar ul li a {
+	background: #fff;
+	display:block;
+	padding: 5% 12%;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing:.11;
+	color: #666666;
+	text-decoration: none;
+	text-align: center;
+	} 
+		
+.background {
+	background-color: #fff;
+	opacity: .85;
+	color:fff;
+	opacity:.75;
+	}
+	
+.section {
+	width: 29%;
+	height:480px;
+	float: left;
+	margin: 2% 2%;
+	text-align: center;
+	}
+
+.journals {
+	border-bottom: 1px solid #CCCCCC;
+	
+	}	
+.journal-section {
+	width: 75%;
+	height:auto;
+	float: left;
+	text-align: left;
+	}	
+
+.journal-section p {
+	width: 85%;
+	height:auto;
+	padding-left: 5%;
+	text-align: left;
+	}	
+	
+.journal-section img {
+	width: 98%;
+	height:auto;
+	float: left;
+	margin: 2% 2%;
+	}	
+	
+.section p {
+	text-align: left;
+	padding: 5%;
+	font-family: 'Roboto', sans-serif;
+	}
+
+footer {
+	background-color: #666666;
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	}	
+
+footer p, footer h3 {
+	color: #CCC;
+	font-family: 'Roboto', sans-serif;
+	}
+
+footer p a {
+	color: #CCC;
+	text-decoration: none;
+	}
+	
+ul {
+	list-style:none;
+	margin: 0;
+	padding: 0;
+	}
+	
+li {
+	display: inline;
+	}
+	
+ul li img {
+	height: 40px;
+	padding-top: 8%;
+	}
+
+
+/* ---------------- MEDIA -------------------------*/
+
+@media screen and (max-width: 478px) {
+	body {
+		font-size: 13px;
+		}
+	}
+
+@media screen and (max-width:740px) {
+	nav ul {
+		width: 100%;
+		margin-bottom: 10px;
+		}
+	nav ul {
+		list-style: none;
+		margin: 0 auto;
+		padding-left: 0;
+		}
+	nav ul li {
+		text-align: center;
+		margin-left: 0 auto;
+		width: 100%;
+		border-top: 1px solid #CCCCCC;
+		border-right: 0px solid #CCCCCC;
+		border-left: 0px solid #CCCCCC;
+		border-bottom: 1px solid #CCCCCC;
+		}
+	nav ul li a {
+		padding: 8px 0px;
+		font-size: 16px;
+		}
+	.left-col {
+		width: 100%;
+		}	
+	.sidebar ul li  {
+		width: 100%;
+		height:auto;
+		padding-left: 5%;
+		text-align: left;
+		}	
+	.section {
+		float: left;
+		width: 85%;
+		margin: 0;
+		}	
+		
+	.journal-section p {
+		float: right;
+		width: 85%;
+		margin: 0;
+		}	
+	
+	.journal-section h3 {
+		float: right;
+		width: 85%;
+		margin: 0;
+		}	
+	
+	.journal-section img {
+		width: 85%;
+		height:auto;
+		float: right;
+		padding-left: 4%;
+		}	
+			
+		
+		
+		
+	}
+
+
+
+
+
+
+</style>
