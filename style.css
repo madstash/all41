@@ -42,6 +42,11 @@ img {
 	width: auto;
 	}
 	
+small {
+	display: block;
+	clear: both;
+	}
+	
 #wrapper {
 	margin: 0 auto;
 	max-width: 1020px;
