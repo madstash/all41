@@ -13,6 +13,7 @@
         <img src="<?php bloginfo('template_directory'); ?>/images/main1.png" alt="Main_image" title="Main Image"/>
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+        <small>Posted on the date in the category</small>
 		<?php the_content(''); ?>
         <?php endwhile; endif; ?>
         <small>index.php</small>
