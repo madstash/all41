@@ -41,7 +41,7 @@
 
         </footer>
 </div>
-				<p style="text-align: center; padding: 0px;">&#169; 2015 - Maddy Homem - All rights reserved</p>
+				<p style="text-align: center; padding: 0px;">&#169; 2015 - Maddy Homem - All rights reserved. <?php wp_loginout(); ?></p>
 		
             <!-- end footer -->
        

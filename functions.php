@@ -8,7 +8,7 @@ Description: This is my web170 wordpress class demo
 Version: 1.0
 */
 
-//Register sidebar
+//Register my sidebar
 register_sidebar(array(
 	'before_widget' => '<div id="%1$s" class="widget %2$s">',
 	'after_widget' => '</div>',
@@ -17,11 +17,17 @@ register_sidebar(array(
 ));
 //
 
-// Register menus
+// Register My Menus
 register_nav_menus(array(
 'main-menu' => __( 'Main' ),
 ));
 //
+
+//featured images and post thumnails
+add_theme_support('post-thumbnails' );
+
+// page excerpts
+add_post_type_support('page', 'excerpt' );
 
 
 
