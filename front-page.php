@@ -8,7 +8,9 @@
         <!-- Begin text ---->
         
        <div class="banner">
+       <?php add_flexslider(); ?>
     	<img src="<?php bloginfo('template_directory'); ?>/images/frame1.jpg" alt="All for One Logo" title="All for one logo"/>
+        
 	</div>
     	
         <!--<aside class="sidebar">

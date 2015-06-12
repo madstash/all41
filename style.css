@@ -47,7 +47,7 @@ small {
 	clear: both;
 	}
 	
-#wrapper {
+#content {
 	margin: 0 auto;
 	max-width: 1020px;
 	width: 98%;
@@ -164,7 +164,7 @@ li:hover li a:hover {background: 666666;}*/
 	}
 	
 .sidebar {
-	width: 18%;
+	width: 20%;
 	float: left;
 	margin-left: .5%;
 	text-align: left;
@@ -204,21 +204,37 @@ li:hover li a:hover {background: 666666;}*/
 	text-align: center;
 	}
 	
-#post-excerpt {
-	overflow: auto;
+#content article.post-excerpt {
+	overflow: hidden;
+	margin-bottom: 10px;
 	
 	}	
 	
 	
 #content img {
+	
+}
+
+
+#content img.wp-post-image {
+	width:30%;
 	box-sizing: border-box;
 	border: 1px solid #CCC;
 	padding: 4px;
-}
-
-#content img.wp-post-image {
+	margin-left: 4%;
+	
 	
 	}
+
+#content input, #content select, #content textarea {
+	display: block;
+	margin-bottom: 10px;
+	}
+	
+#content img.featured {
+	margin-bottom: 30px;
+	
+}
 
 #content img.attachment-thumbnail {
 	float: left;
@@ -231,6 +247,7 @@ li:hover li a:hover {background: 666666;}*/
 	}
 
 #content img.attachment-large {
+	width: 98%;
 	
 	}
 
@@ -238,9 +255,19 @@ li:hover li a:hover {background: 666666;}*/
 	
 	}	
 	
+.widget {
+	float: left;
 	
 	
+	}	
 
+.widget h2 {
+
+	}
+.widget widget_recent_entries {
+	text-decoration: none;
+	}
+	
 .journals {
 	/*border-bottom: 1px solid #CCCCCC;*/
 	

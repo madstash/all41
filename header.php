@@ -7,10 +7,28 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title><?php bloginfo('description'); ?> | <?php bloginfo('name'); ?></title>
+<title><?php get_my_title_tag(); ?></title>
+<!--meta info begins--->
+<meta name="description" content="<?php echo (get_the_excerpt()); ?>" />
+<meta name="keywords" content="Humanitarianism, Humanitarian, Journals, ending worldwide hunger, disaster relief, Philanthropy />
+<meta name="viewport" content="user-scalable=no, intial-scale=1.0, maxium-scale=1.0" />
+
 
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>"
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/flexslider.css" type="text/css" media="all" />
+
+
+<script src="<?php bloginfo('template_directory'); ?>/scripts/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(window).load(function(){
+        $('.flexslider').flexslider({
+            animation: "fade",
+            slideshow: false,
+        });
+    })
+</script>
+
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -26,7 +44,7 @@
 
 
 <body <?php body_class(); ?>>
-<div id="wrapper">
+<div id="content">
 	<div id="login">
     	<p>sign in</p>
     
